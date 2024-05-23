@@ -32,6 +32,7 @@ function App() {
 
 
 //context-api page
+import React from 'react'
 import { createContext, useState } from 'react';
 
 const testContext = createContext(null);
@@ -58,8 +59,8 @@ export default testContext;
 
 
 // cosumer page
-
-import React, { useContext } from 'react'
+import React from 'react'
+import { useContext } from 'react'
 import testContext from './Context'
 
 function Custom2() {
